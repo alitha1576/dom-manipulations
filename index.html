@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulations 2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- 1) Create a counter similar to the one included in the screenshot below / in the presentation.
     - There are two buttons, a plus and a minus one. Initially, the plus button adds 1 to the counter, the minus button subtracts 1 from the number. 
@@ -25,6 +27,22 @@
         <span class="field" id="counter2">0</span>
         <button id="plus2">+</button>
     </div>
+
+
+    <!-- Add an additional button that checks if the current number in the counter is odd or even.
+    - If the number is even, change the counter color to green.
+    - If the number is odd, change the counter color to red.
+    - Reset the counter color to black if the user clicks on the plus or the minus buttons.  -->
+
+    <h2>Counter 3</h2>
+    <div class="third-exercise">
+        <button id="minus3">-</button>
+        <span class="field" id="counter3">0</span>
+        <button id="plus3">+</button>
+        <button id="isEven">Is even?</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

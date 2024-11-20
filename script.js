@@ -35,3 +35,38 @@ minusButton2.addEventListener('click', function() {
     counterField2.innerHTML = counter2;
     }
 });
+
+
+//// third exercise
+
+const counterField3 = document.getElementById('counter3');
+let counter3 = 0;
+
+const plusButton3 = document.getElementById('plus3');
+const minusButton3 = document.getElementById('minus3');
+
+const isEven = document.getElementById("isEven");
+
+plusButton3.addEventListener('click', function() {
+    counterField3.style.color='black';
+    counter3 += 1;
+    counterField3.innerHTML = counter3;
+});
+
+minusButton3.addEventListener('click', function() {
+    counterField3.style.color='black';
+    if (counter3 > 0) {
+        counter3 -= 1;
+    counterField3.innerHTML = counter3;
+    }
+});
+
+isEven.addEventListener('click', function() {
+    if (counter3 % 2 === 0) {
+        counterField3.style.color='green';
+    } else {
+        counterField3.style.color='red';
+    }
+})
+
+
