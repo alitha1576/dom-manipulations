@@ -13,7 +13,7 @@
     - There are two buttons, a plus and a minus one. Initially, the plus button adds 1 to the counter, the minus button subtracts 1 from the number. 
     - The counter displays the current sum. By default it should start as 0.  -->
     <h2>Counter 1</h2>
-    <div class="first-exercise">
+    <div>
         <button class="button" id="minus">-</button>
         <span class="field" id="counter">0</span>
         <button class="button" id="plus">+</button>
@@ -22,7 +22,7 @@
 
     <!-- 2) Adjust the minus button to not allow the counter to go below 0 (only allow subtracting if the current count is positive).  -->
     <h2>Counter 2</h2>
-    <div class="second-exercise">
+    <div>
         <button id="minus2">-</button>
         <span class="field" id="counter2">0</span>
         <button id="plus2">+</button>
@@ -35,11 +35,26 @@
     - Reset the counter color to black if the user clicks on the plus or the minus buttons.  -->
 
     <h2>Counter 3</h2>
-    <div class="third-exercise">
+    <div>
         <button id="minus3">-</button>
         <span class="field" id="counter3">0</span>
         <button id="plus3">+</button>
         <button id="isEven">Is even?</button>
+    </div>
+
+<!-- Add an additional input with a default value of 1
+    - Allow the user to input any number between 0 and 10. 
+    - Once the user enters the value, the plus and minus buttons should add/subtract this value instead of subtracting 1
+    - it's okay to assume the user is friendly and will not input anything else then integers into the input
+    - (optional) Adjust the check from the second exercise to make sure the user cannot cheat and for example go from 3 to -1 by changing the input to 4 and clicking the minus button.  -->
+
+    <h2>Counter 4</h2>
+    <div>
+        <button id="minus4">-</button>
+        <span class="field" id="counter4">0</span>
+        <button id="plus4">+</button>
+        <button id="isEven4">Is even?</button>
+        <input id="user-input" type="number" value="1" max="10" min="0">
     </div>
 
     <script src="script.js"></script>

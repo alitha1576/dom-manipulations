@@ -70,3 +70,42 @@ isEven.addEventListener('click', function() {
 })
 
 
+
+//// fourth exercise
+
+const counterField4 = document.getElementById('counter4');
+
+const plusButton4 = document.getElementById('plus4');
+const minusButton4 = document.getElementById('minus4');
+
+const isEven4 = document.getElementById("isEven4");
+
+const userInput = document.getElementById('user-input');
+
+plusButton4.addEventListener('click', function() {
+    counterField4.style.color = 'black';
+    const counter4 = parseInt(userInput.value);
+    counterField4.innerHTML = parseInt(counterField4.innerHTML) + counter4;
+});
+
+minusButton4.addEventListener('click', function () {
+    counterField4.style.color = 'black';
+    const counter4 = parseInt(userInput.value);
+    const diff = parseInt(counterField4.innerHTML) - counter4;
+    if (diff >= 0) {
+        counterField4.innerHTML = diff;
+    } else {
+        counterField4.innerHTML = 0;
+    }
+});
+
+isEven4.addEventListener('click', function() {
+    if (parseInt(counterField4.innerHTML) % 2 === 0) {
+        counterField4.style.color='green';
+    } else {
+        counterField4.style.color='red';
+    }
+})
+
+
+
